@@ -24,7 +24,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
   };
   return (
     <div>
-      <Card className='w-full flex flex-start shadow-sm  rounded-lg hover:shadow-lg m-3'>
+      <Card className='w-full transition-colors flex flex-start shadow-sm bg-gray-100 rounded-lg hover:bg-white hover:shadow-lg m-3'>
         <TaskCheckButton
           onPress={onComplete}
           isCompleted={todoItem.isCompleted}
