@@ -1,14 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.less";
-import { Button } from "antd";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
-    <div className='bg-yellow-500 h-full'>
-      <div className='h-screen'>
-        <Button type='primary'>Button</Button>
-        hello
+    <div className='bg-gray-200 h-full'>
+      <div className=' content-center flex items-center  h-screen justify-center'>
+        <HomePage />
       </div>
     </div>
   );
