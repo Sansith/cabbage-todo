@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircleTwoTone, CheckOutlined } from "@ant-design/icons";
+import { CheckCircleOutlined, CheckOutlined } from "@ant-design/icons";
 export interface TaskCheckButtonProps {
   label: string;
   isCompleted: boolean;
@@ -17,7 +17,7 @@ const TaskCheckButton: React.FC<TaskCheckButtonProps> = ({
         {!isCompleted ? (
           <CheckOutlined className='animate-bounce' />
         ) : (
-          <CheckCircleTwoTone />
+          <CheckCircleOutlined />
         )}
       </div>
       <div className={isCompleted ? "p-1 line-through text-gray-300" : "p-1"}>

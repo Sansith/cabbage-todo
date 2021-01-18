@@ -49,7 +49,7 @@ const HomePage: React.FC<HomePageProps> = () => {
       <AddTaskInput handleAddTask={addTask}></AddTaskInput>
       <Card className='rounded-lg'>
         {todoList.length === 0 ? (
-          <Result icon={<SmileOutlined />} title='Great!, No Tasks Left!' />
+          <Result icon={<SmileOutlined />} title='Whooo!, No Tasks Left' />
         ) : (
           todoList?.map((item, i) => (
             <TaskCard
